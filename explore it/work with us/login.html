@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+      /* CSS Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      form {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+      }
+      .forgot-password {
+        float: left;
+      }
+      .sign-up {
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="hello.php" method="post">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Log In">
+      <div class="clearfix">
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        
+      </div>
+    </form>
+  </body>
+</html>

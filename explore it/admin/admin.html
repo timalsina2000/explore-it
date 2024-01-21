@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" type="text/css" href="admin.css">
+  <script src="admin.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="overview">
+      <h2>Overview</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3>Users</h3>
+          <p class="count">500</p>
+        </div>
+        <div class="stat">
+          <h3>Products</h3>
+          <p class="count">2000</p>
+        </div>
+        <div class="stat">
+          <h3>Orders</h3>
+          <p class="count">1000</p>
+        </div>
+      </div>
+      <div class="chart">
+        <h3>Revenue</h3>
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </section>
+    <section class="users">
+      <h2>Users</h2>
+	  <table>
+		<thead>
+		  <tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Actions</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr id="row1">
+			<td>1</td>
+			<td class="name">John Doe</td>
+			<td class="email">johndoe@example.com</td>
+			<td>
+			  <button class="editButton">Edit</button>
+			  <button class="deleteButton">Delete</button>
+			</td>
+		  </tr>
+		  <tr id="row2">
+			<td>2</td>
+			<td class="name">Jane Doe</td>
+			<td class="email">janedoe@example.com</td>
+			<td>
+			  <button class="editButton">Edit</button>
+			  <button class="deleteButton">Delete</button>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+    </section>
+  </main>
+  
+</body>
+</html>
